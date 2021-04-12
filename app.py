@@ -12,7 +12,7 @@ import pickle
 
 # load the model from disk
 
-clf = pickle.load(open(rf_spam_model.pkl, 'rb'))
+clf = pickle.load(open('rf_spam_model.pkl', 'rb'))
 cv=pickle.load(open('tranform.pkl','rb'))
 app = Flask(__name__)
 
